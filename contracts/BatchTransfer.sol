@@ -19,7 +19,7 @@ contract BatchTransfer is Ownable {
          _tokenHolders.length == _balances.length
          array & gas limit for each transaction
         */
-        for(uint16 i = 0; i < _tokenHolders.length; i++) {
+        for(uint8 i = 0; i < _tokenHolders.length; i++) {
             token.transferFrom(msg.sender, _tokenHolders[i], _balances[i]);
         }    
     }
