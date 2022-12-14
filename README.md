@@ -3,7 +3,7 @@ batch-transfer smart contract and script to call the contract
 
 ## How to use
 
-### 1. Replace balanceSheet.js
+### 1. Replace balanceSheet.json
 
 [Get the balance sheet](https://github.com/hippocrat-dao/ERC20-holder-snapshot), which is a hashtable of keys(addresses) and values(amountsToTransfer).
 
