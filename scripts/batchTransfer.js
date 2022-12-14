@@ -29,19 +29,19 @@ const batchTransfer = async () => {
     });
     // 1 batchTransfer for 220 transfer
     for (let i = 0; i < parseInt(holders.length/220); i++) {
-        // 1 min for 1 batchTransfer
-        await sleep(60);
         console.log(`batch transfer ${i+1} starts`);
         const tx = await contract.batchTransfer(
-            holders[i * 220, (i+1) * 220], 
-            balances[i * 220, (i+1) * 220]
+            holders.slice(i * 220, (i+1) * 220), 
+            balances.slice(i * 220, (i+1) * 220)
             );
         console.log(tx);
+        // 1 min for 1 batchTransfer
+        await sleep(60);
     }
     console.log('batch transfer final starts');
     const tx = await contract.batchTransfer(
-        holders[13200, holders.length-1], 
-        balances[13200, balances.length-1],
+        holders.slice(13200, holders.length-1), 
+        balances(13200, balances.length-1),
         )
     console.log(tx);
     console.log('batch transfer final ends');
