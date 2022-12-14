@@ -14,15 +14,15 @@ const sleep = async (sec) => await new Promise(
     resolve => setTimeout(resolve, sec * 1000)); 
 
 const batchTransfer = async () => {
-    // read snapshot balanceSheet
-    const snapshot = JSON.parse(
+    // read balanceSheet balanceSheet
+    const balanceSheet = JSON.parse(
         await fs.promises.readFile(
             './scripts/balanceSheet.json',
             'utf-8')
     );
-    // get holders and balances as array from snapshot
-    const snapshotMap = new Map(Object.entries(snapshot));
-    snapshotMap.forEach((value, key, map) => {
+    // get holders and balances as array from balanceSheet
+    const balanceSheetMap = new Map(Object.entries(balanceSheet));
+    balanceSheetMap.forEach((value, key, map) => {
         holders.push(key);
         balances.push(ethers.BigNumber.from(
             BigInt(value)));
