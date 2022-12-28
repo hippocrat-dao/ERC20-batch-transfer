@@ -25,4 +25,4 @@ Signer private key must be of the batch-transfer contract owner.
 $ node batchTransfer.js
 ```
 
-1 batch transfer(including 220 transfer) executes per minute
+1 batch transfer(including 220 transfer) executes per 2 minutes
