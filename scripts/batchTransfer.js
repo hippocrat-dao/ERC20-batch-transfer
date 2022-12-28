@@ -40,8 +40,8 @@ const batchTransfer = async () => {
     }
     console.log('batch transfer final starts');
     const tx = await contract.batchTransfer(
-        holders.slice(220 * parseInt(holders.length/220), holders.length-1), 
-        balances.slice(220 * parseInt(holders.length/220), balances.length-1),
+        holders.slice(220 * parseInt(holders.length/220), holders.length), 
+        balances.slice(220 * parseInt(holders.length/220), balances.length),
         )
     console.log(tx);
     console.log('batch transfer final ends');
