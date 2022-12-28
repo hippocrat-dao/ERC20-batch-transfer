@@ -2,26 +2,8 @@
     This is example of CONTRACT params.
     Use your own CONTRACT address and abi!
 */
-const CONTRACT_ADDRESS = "0x9e22f418fb8cd4f18ad56c29a6a25c29e5d21e48";
+const CONTRACT_ADDRESS = "0xefc626d74d20d8ecdc3124d6f8531b5506c8e575";
 const CONTRACT_ABI = [
-	{
-		"inputs": [
-			{
-				"internalType": "address[]",
-				"name": "_tokenHolders",
-				"type": "address[]"
-			},
-			{
-				"internalType": "uint256[]",
-				"name": "_balances",
-				"type": "uint256[]"
-			}
-		],
-		"name": "batchTransfer",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
 	{
 		"inputs": [
 			{
@@ -53,21 +35,19 @@ const CONTRACT_ABI = [
 		"type": "event"
 	},
 	{
-		"inputs": [],
-		"name": "renounceOwnership",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
-				"internalType": "address",
-				"name": "newOwner",
-				"type": "address"
+				"internalType": "address[]",
+				"name": "_tokenHolders",
+				"type": "address[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "_balances",
+				"type": "uint256[]"
 			}
 		],
-		"name": "transferOwnership",
+		"name": "batchTransfer",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -87,6 +67,13 @@ const CONTRACT_ABI = [
 	},
 	{
 		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "token",
 		"outputs": [
 			{
@@ -96,6 +83,19 @@ const CONTRACT_ABI = [
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	}
 ]
