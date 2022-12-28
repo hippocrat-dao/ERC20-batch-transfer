@@ -9,9 +9,9 @@ batch-transfer smart contract and script to call the contract
 
 Balance sheet is not limited to snapshot, can be sourced from various ways!
 
-### 2. Replace CONTRACT_ADDRESS at constants.js
+### 2. Replace CONTRACT_ADDRESS and CONTRACT_ABI at constants.js
 
-With your deployed one(if you modify BatchTransfer.sol, replace abi as well).
+With your deployed one's.
 
 ### 3. Create .env file in local and declare ETHERSCAN_API_KEY and SIGNER_PRIVATE_KEY
 
