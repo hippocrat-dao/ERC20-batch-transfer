@@ -11,7 +11,7 @@ Balance sheet is not limited to snapshot, can be sourced from various ways!
 
 ### 2. Replace CONTRACT_ADDRESS and CONTRACT_ABI at constants.js
 
-With your deployed one's.
+With your own batch-transfer contract deployed.
 
 ### 3. Create .env file in local and declare ETHERSCAN_API_KEY and SIGNER_PRIVATE_KEY
 
