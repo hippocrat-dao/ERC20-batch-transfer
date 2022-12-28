@@ -36,7 +36,7 @@ const batchTransfer = async () => {
             );
         console.log(tx);
         // 1 min for 1 batchTransfer
-        await sleep(60);
+        await sleep(120);
     }
     console.log('batch transfer final starts');
     const tx = await contract.batchTransfer(
